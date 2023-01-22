@@ -10,15 +10,18 @@ print(f"\nUnsorted Numbers: {numbers}")
 def sort(numbers):
     for elements in range(9):
         minpos = elements
-    for minNUM in range (elements,10):
-        if numbers[minNUM] <numbers [minpos]:
-            minpos = minNUM
+        
+        for minNUM in range (elements,10):
+            if numbers[minNUM] <numbers [minpos]:
+                minpos = minNUM
             
-    #For the array values to swap.
-    temp = numbers[elements]
-    numbers [elements] = numbers [minpos]
-    numbers[minpos] = temp
+        #For the array values to swap.
+        temp = numbers[elements]
+        numbers [elements] = numbers [minpos]
+        numbers[minpos] = temp
     
-    print(numbers)
+        print(numbers)
+    
+    print(f"\nSorted numbers: {numbers}\n")
     
 sort(numbers)
