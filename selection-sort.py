@@ -10,7 +10,7 @@ print(f"\nUnsorted Numbers: {numbers}")
 def sort(numbers):
     for elements in range(9):
         minpos = elements
-    for minNUM in range (elements,11):
+    for minNUM in range (elements,10):
         if numbers[minNUM] <numbers [minpos]:
             minpos = minNUM
             
@@ -18,3 +18,7 @@ def sort(numbers):
     temp = numbers[elements]
     numbers [elements] = numbers [minpos]
     numbers[minpos] = temp
+    
+    print(numbers)
+    
+sort(numbers)
