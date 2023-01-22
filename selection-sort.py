@@ -13,3 +13,8 @@ def sort(numbers):
     for minNUM in range (elements,11):
         if numbers[minNUM] <numbers [minpos]:
             minpos = minNUM
+            
+    #For the array values to swap.
+    temp = numbers[elements]
+    numbers [elements] = numbers [minpos]
+    numbers[minpos] = temp
