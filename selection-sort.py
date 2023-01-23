@@ -20,8 +20,8 @@ def sort(numbers):
         numbers [elements] = numbers [minpos]
         numbers[minpos] = temp
     
-        print(numbers)
+        print(numbers) # prints the numbers per loop
     
-    print(f"\nSorted numbers: {numbers}\n")
+    print(f"\nSorted numbers: {numbers}\n") # Printing statement for output.
     
 sort(numbers)
