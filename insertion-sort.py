@@ -8,3 +8,8 @@ numbers = [96, 20, 67, 27, 38, 7, 33, 43, 21, 39] # unsorted list of numbers
 print(f"\nUnsorted Numbers: {numbers}\n")
 
 def sort(numbers):
+    for element in range(1, len(numbers)):
+        sorted_area = element
+        while numbers[sorted_area - 1] > numbers[sorted_area] and sorted_area > 0:
+            numbers[sorted_area - 1], numbers[sorted_area] =  numbers[sorted_area], numbers[sorted_area - 1]
+            sorted_area -= 1
