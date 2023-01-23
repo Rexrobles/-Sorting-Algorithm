@@ -34,3 +34,5 @@ def merge_sort(numbers):
             numbers[merge_index] = RightPart[right_index]
             right_index += 1
             merge_index += 1
+            
+        print(numbers)
