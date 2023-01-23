@@ -14,7 +14,7 @@ def sort(numbers):
             numbers[sorted_area - 1], numbers[sorted_area] =  numbers[sorted_area], numbers[sorted_area - 1]
             sorted_area -= 1
         
-        print(numbers)
+        print(numbers)# prints the numbers per loop
     print(f"\nSorted numbers: {numbers}\n")
 
 sort(numbers)
