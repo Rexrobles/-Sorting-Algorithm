@@ -16,3 +16,21 @@ def merge_sort(numbers):
 
         merge_sort(LeftPart)
         merge_sort(RightPart)
+        
+        left_index = right_index = merge_index = 0
+        while left_index < len(LeftPart) and right_index < len(RightPart):
+            if LeftPart[left_index] < RightPart[right_index]:
+                numbers[merge_index] = LeftPart[left_index]
+                left_index += 1
+            else:
+                numbers[merge_index] = RightPart[right_index]
+                right_index += 1
+            merge_index += 1
+        while left_index < len(LeftPart):
+            numbers[merge_index] = LeftPart[left_index]
+            left_index += 1
+            merge_index += 1
+        while right_index < len(RightPart):
+            numbers[merge_index] = RightPart[right_index]
+            right_index += 1
+            merge_index += 1
