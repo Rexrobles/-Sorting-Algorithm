@@ -16,3 +16,5 @@ def sort(numbers):
         
         print(numbers)
     print(f"\nSorted numbers: {numbers}\n")
+
+sort(numbers)
