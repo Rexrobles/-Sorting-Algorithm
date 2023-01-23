@@ -15,3 +15,7 @@ def sort(numbers):
                 temp = numbers[maxNUM]
                 numbers[maxNUM] = numbers[maxNUM+1]
                 numbers[maxNUM+1] = temp
+                
+        print(numbers)
+
+    print(f"\nSorted numbers: {numbers}\n")
