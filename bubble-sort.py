@@ -7,3 +7,5 @@
 numbers = [96, 20, 67, 27, 38, 7, 33, 43, 21, 39]
 
 print(f"\nUnsorted Numbers: {numbers}\n")
+
+def sort(numbers):
