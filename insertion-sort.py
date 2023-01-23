@@ -13,3 +13,6 @@ def sort(numbers):
         while numbers[sorted_area - 1] > numbers[sorted_area] and sorted_area > 0:
             numbers[sorted_area - 1], numbers[sorted_area] =  numbers[sorted_area], numbers[sorted_area - 1]
             sorted_area -= 1
+        
+        print(numbers)
+    print(f"\nSorted numbers: {numbers}\n")
