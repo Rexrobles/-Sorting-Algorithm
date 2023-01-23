@@ -34,4 +34,9 @@ def partition(numbers, left, right):
 
     if numbers[leftindex] > pivot:
         numbers[leftindex], numbers[right] = numbers[right], numbers[leftindex]
+        print(numbers)
     return leftindex
+
+quick_sort(numbers, 0, len(numbers)-1)
+
+print(f"\nSorted numbers: {numbers}\n")
