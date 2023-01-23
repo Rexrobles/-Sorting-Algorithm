@@ -36,3 +36,7 @@ def merge_sort(numbers):
             merge_index += 1
             
         print(numbers)
+        
+merge_sort(numbers)
+
+print(f"\nSorted numbers: {numbers}\n")
